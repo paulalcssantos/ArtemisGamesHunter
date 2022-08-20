@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta value="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ártemis - Games Hunter</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--JS-->
+    <script src="./js/index.js" defer></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="logo">
+            <ul>
+                <li><a href="./index.html"><img src="./img/Logotipo-Transparente.png" alt="Logotipo" id="img"></a></li>
+                <li><a href="./index.html"><h1>Ártemis - Games Hunter</h1></a></li>
+            </ul>         
+        </nav>     
+        <nav class="menuSuperior">
+            <ul>
+                <li><a href="#popUp"><img src="./img/information.png" alt="Informacao" title="Informações"></a></li>                
+            </ul>
+        </nav>   
+    </header>
+
+    <main>
+        <section class="menuLateral">
+            <div>
+                <p>Encontre o jogo que mais combine com você!</p>
+            </div>
+            <div class="genres">
+                <h3>Gêneros</h3>
+                <fieldset class="inputs">
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="mmorpg" value="mmorpg" > 
+                    <label for="mmorpg">mmorpg</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="shooter" value="shooter"> <label for="shooter">shooter </label> 
+                    <span>(Tiro)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="strategy" value="strategy"> 
+                    <label for="strategy">strategy </label>
+                    <span>(Estratégia)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="moba" value="moba"> 
+                    <label for="moba">moba</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="racing" value="racing"> 
+                    <label for="racing">racing </label> 
+                    <span>(Corrida)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="sports" value="sports"> 
+                    <label for="sports">sports </label> 
+                    <span>(Esportes)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="social" value="social"> 
+                    <label for="social">social</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="sandbox" value="sandbox"> 
+                    <label for="sandbox">sandbox</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="open-world" value="open-world"> 
+                    <label for="open-world">open-world </label> 
+                    <span>(Mundo Aberto)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="survival" value="survival"> 
+                    <label for="survival">survival </label> 
+                    <span>(Sobrevivência)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="pvp" value="pvp"> 
+                    <label for="pvp">pvp </label> 
+                    <span>(player vs. player)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="pve" value="pve"> 
+                    <label for="pve">pve </label> 
+                    <span>(player vs. máquina)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="pixel" value="pixel"> 
+                    <label for="pixel">pixel</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="voxel" value="voxel"> 
+                    <label for="voxel">voxel</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="zombie" value="zombie"> 
+                    <label for="zombie">zombie</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="turn-based" value="turn-based"> 
+                    <label for="turn-based">turn-based </label> 
+                    <span>(Estratégia por turnos)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="first-person" value="first-person"> 
+                    <label for="first-person">first-persons </label> 
+                    <span>(Primeira pesoa)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="third-Person" value="third-Person"> 
+                    <label for="third-person">third-Person </label> 
+                    <span>(Terceira pessoa)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="top-down" value="top-down"> 
+                    <label for="top-down">top-down</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="tank" value="tank"> 
+                    <label for="tank">tank </label> 
+                    <span>(Tanque)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="space" value="space"> 
+                    <label for="space">space </label> 
+                    <span>(Espaço)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="sailing" value="sailing"> 
+                    <label for="sailing">sailing </label> 
+                    <span>(Navegação)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="side-scroller" value="side-scroller"> 
+                    <label for="side-scroller">side-scroller </label> 
+                    <span>(Rolagem lateral)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="superhero" value="superhero"> 
+                    <label for="superhero">superhero </label> 
+                    <span>(Super-Herói)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="permadeath" value="permadeath"> 
+                    <label for="permadeath">permadeath </label> 
+                    <span>(Morte permanente)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="card" value="card"> 
+                    <label for="card">card </label> 
+                    <span>(Cartas)</span> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="battle-royale" value="battle-royale"> 
+                    <label for="battle-royale">battle-royale</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="mmo" value="mmo"> 
+                    <label for="mmo">mmo</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="mmofps" value="mmofps">
+                    <label for="mmofps">mmofps</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="mmotps" value="mmotps"> 
+                    <label for="mmotps">mmotps</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="3d" value="3d"> 
+                    <label for="3d">3d</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="2d" value="2d"> 
+                    <label for="2d">2d</label> <br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="anime" value="anime"> 
+                    <label for="anime">anime </label> 
+                    <span>(Animação)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="sci-fi" value="sci-fi"> 
+                    <label for="sci-fi">sci-fi </label> 
+                    <span>(Ficção Científica)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="fighting" value="fighting"> 
+                    <label for="fighting">fighting </label> 
+                    <span>(Luta)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="action-rpg" value="action-rpg"> 
+                    <label for="action-rpg">action-rpg </label> 
+                    <span>(Ação-RPG)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="action" value="action"> 
+                    <label for="action">action </label> 
+                    <span>(Ação)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="military" value="military"> 
+                    <label for="military"> military</label><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="martial-arts" value="martial-arts"> 
+                    <label for="martial-arts">martial-arts </label> 
+                    <span>(Artes marciais)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="flight" value="flight"> 
+                    <label for="flight">flight </label> 
+                    <span>(Aviação)</span><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="low-spec" value="low-spec"> 
+                    <label for="low-spec">low-spec</label><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="tower-defense" value="tower-defense"> 
+                    <label for="tower-defense">tower-defense</label><br>
+
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="horror" value="horror"> 
+                    <label for="horror">horror</label><br>
+                    
+                    <input type="checkbox" name="genre" onchange="selectCheckbox()" id="mmorts" value="mmorts"> <label for="mmorts">mmorts</label><br>
+                </fieldset>
+            </div>
+
+            <div class="platform">
+                <h3>Plataforma</h3>
+                <fieldset class="radios">
+                    <input type="radio" name="platforms" id="pc"> 
+                    <label for="pc">PC</label>
+                    
+                    <input type="radio" name="platforms" id="browser"> 
+                    <label for="browser">Navegador</label>
+
+                    <input type="radio" name="platforms" id="both" checked> 
+                    <label for="both">Ambas</label>
+                </fieldset>
+            </div>
+            
+            <div class="capacity">
+                <h3>Quantidade de RAM<span>(opcional)</span></h3>
+                <input type="number" min="0" placeholder=" Ex: 2, 4, 8, 16..." id="ram" title="Quantidade de mémoria RAM do seu computador."><label for="ram">GB</label>
+            </div>
+
+            <button id="btnSubmit" onclick="loadGame()" title="Buscar">Buscar</button>
+            <button id="btnCancel" onclick="cancelFilters()" title="Cancelar a filtragem.">Limpar</button>
+        </section>
+
+        <section id="result">
+            <h2>Seu match aqui!</h2>
+            <img src="./img/Logotipo-Transparente.png" alt="Logomarca" id="imgStart">
+            <p id="gameName"></p>
+            <p>
+                <a href="#" id="gameLink" target="_blank"></a>
+            </p>
+        </section>
+
+        <section id="popUp" class="openPopUp">
+            <div>
+                <a href="#close" title="Fechar" class="close">X</a>
+                <h2>Olá, hunter!</h2>
+                <p>Eu sou Ártemis, a deusa da caça, e aqui no meu site te auxilio na caça pelo jogo ideal! Aqui você terá a opção de filtrar características para encontrar seu match perfeito!!! </p>
+                <p>Você deverá escolher pelo menos um gênero, poderá escolher a plataforma que você mais gosta e informar a quantidade de memória RAM que o seu computador suporta. Depois disso, irei te sugerir um jogo que combine perfeitamente com você!</p>
+                <h3>Boa caçada!</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> Artemis - Games Hunter, 2022 &copy;</p>
+    </footer>
+</body>
+</html>
